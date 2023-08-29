@@ -71,8 +71,6 @@ submit.addEventListener('click', function() {
 
     for (let i = 0; i < usersEmail.length; i++) {
 
-        console.log(usersEmail[3]);
-
         if (joinEmail === usersEmail) {
     
             canEnter = true;
