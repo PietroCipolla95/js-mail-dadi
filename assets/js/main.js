@@ -57,11 +57,11 @@ const usersEmail = [
     'email_8@email.it',
 ]
 
+console.log(usersEmail);
+
 // ask the email to user 
 
-let joinEmail = document.getElementById('emailDOM').value;
 
-let canEnter = false;
 
 // list check
 
@@ -69,9 +69,13 @@ const submit = document.querySelector('button');
 
 submit.addEventListener('click', function() {
 
+    let joinEmail = document.getElementById('emailDOM').value;
+    let canEnter = false;
+    console.log(joinEmail);
+
     for (let i = 0; i < usersEmail.length; i++) {
 
-        if (joinEmail === usersEmail) {
+        if (joinEmail === usersEmail[i]) {
     
             canEnter = true;
     
