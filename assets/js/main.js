@@ -59,22 +59,28 @@ const usersEmail = [
 
 // ask the email to user 
 
-let joinEmail = document.getElementById('emailInput');
+let joinEmail = document.getElementById('emailDOM').value;
 
 let canEnter = false;
 
 // list check
 
-const submit = document.querySelector('button')
+const submit = document.querySelector('button');
 
 submit.addEventListener('click', function() {
 
-    for (i = 0; i < usersEmail.length; i++) {
+    for (let i = 0; i < usersEmail.length; i++) {
 
-        if (joinEmail === usersEmail[i]) {
+        console.log(usersEmail[3]);
+
+        if (joinEmail === usersEmail) {
     
             canEnter = true;
     
+        } else {
+
+            canEnter = false;
+
         }
     
     }
@@ -90,12 +96,3 @@ submit.addEventListener('click', function() {
     }
 
 })
-
-
-
-
-
-
-
-
-
