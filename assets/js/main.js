@@ -60,9 +60,6 @@ const usersEmail = [
 console.log(usersEmail);
 
 // ask the email to user 
-
-
-
 // list check
 
 const submit = document.querySelector('button');
@@ -79,11 +76,7 @@ submit.addEventListener('click', function() {
     
             canEnter = true;
     
-        } else {
-
-            canEnter = false;
-
-        }
+        } 
     
     }
     
